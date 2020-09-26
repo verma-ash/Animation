@@ -1,34 +1,76 @@
-body{
-    background: gray;
-    margin: 0px;
-    padding: 0px;
-    
+body {
+  background: gray;
+  margin: 0px;
+  padding: 0px;
 }
 
-#box1{
-    background: black;
-    color: white;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    /* margin: -250px; */
-    left: calc(50% - 200px);
-    top: 50%;
-    text-align: center;
-    line-height: 400px;
-    font-size: 42px;
-    border-radius: 12px;
-    animation-name: sample1;
-    animation-duration: .5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+#box1 {
+  background: black;
+  color: white;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  /* margin: -250px; */
+  left: calc(50% - 200px);
+  top: 50%;
+  text-align: center;
+  line-height: 400px;
+  font-size: 42px;
+  border-radius: 12px;
+  animation-name: sample1;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-@keyframes sample1{
-    0%{border-radius: 0% }
-    100%{border-radius: 50%; background: white; color: black; }
+@keyframes sample1 {
+  0% {
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 50%;
+    background: white;
+    color: black;
+  }
 }
 
-#paraone p{
-    padding: 36px;
+#box2 {
+  width: 1039px;
+  height: 584.25px;
+  position: relative;
+  /* margin: -250px; */
+  left: calc(50% - 519.5px);
+  top: 50%;
+  text-align: center;
+  line-height: 400px;
+  font-size: 42px;
+  border-radius: 12px;
+  animation-name: sample2;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: ease-in;
+}
+
+@keyframes sample2 {
+  0% {
+    background-image: url("/AnimationTry01/Imag/IMG20191027131919.jpg");
+  }
+  25% {
+    background-image: url("/AnimationTry01/Imag/IMG20191119173412.jpg");
+  }
+  50% {
+    background-image: url("/AnimationTry01/Imag/IMG20191222181543.jpg");
+  }
+  75% {
+    background-image: url("/AnimationTry01/Imag/IMG20200121131935.jpg");
+  }
+  100% {
+    background-image: url("/AnimationTry01/Imag/IMG20200209103031.jpg");
+  }
+}
+
+#paraone p {
+  padding: 36px;
 }
