@@ -2,16 +2,33 @@ body{
     background: gray;
     margin: 0px;
     padding: 0px;
+    
 }
 
 #box1{
-    background: wheat;
-    width: 500px;
-    height: 500px;
+    background: black;
+    color: white;
+    width: 400px;
+    height: 400px;
     position: relative;
     /* margin: -250px; */
-    left: calc(50% - 250px);
+    left: calc(50% - 200px);
     top: 50%;
     text-align: center;
-    line-height: 500px;
+    line-height: 400px;
+    font-size: 42px;
+    border-radius: 12px;
+    animation-name: sample1;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sample1{
+    0%{border-radius: 0% }
+    100%{border-radius: 50%; background: white; color: black; }
+}
+
+#paraone p{
+    padding: 36px;
 }
