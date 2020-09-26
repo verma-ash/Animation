@@ -1,0 +1,17 @@
+body{
+    background: gray;
+    margin: 0px;
+    padding: 0px;
+}
+
+#box1{
+    background: wheat;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    /* margin: -250px; */
+    left: calc(50% - 250px);
+    top: 50%;
+    text-align: center;
+    line-height: 500px;
+}
